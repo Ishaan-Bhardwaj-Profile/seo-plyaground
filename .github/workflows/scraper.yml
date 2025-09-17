@@ -1,0 +1,49 @@
+name: Scheduled Scraper
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs daily at 03:00 UTC (adjust if you want)
+    - cron: '0 3 * * *'
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scraper/requirements.txt
+
+      - name: Run scraper
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CX: ${{ secrets.GOOGLE_CX }}
+        run: |
+          mkdir -p scraper_output
+          python scraper/fetch_search_results.py \
+            --query "free cricket browser games" \
+            --query "best browser puzzle games" \
+            --query "free low end pc games under 1GB" \
+            --max 10 \
+            --out scraper_output
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add scraper_output || true
+          git commit -m "Automated scraper results $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+          git push origin HEAD:main
