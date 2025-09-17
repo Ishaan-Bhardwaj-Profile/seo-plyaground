@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>SEO Playground | Ishaan Bhardwaj</title>
-  <meta name="description" content="SEO Playground: A practice website by Ishaan Bhardwaj to learn real-world SEO techniques hands-on.">
+  <meta name="description" content="SEO Playground: A hands-on practice site by Ishaan Bhardwaj to learn crawling, indexing, content and technical SEO.">
   <meta name="author" content="Ishaan Bhardwaj">
+
+  <!-- canonical -->
+  <link rel="canonical" href="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">
+
+  <!-- Open Graph (social previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SEO Playground | Ishaan Bhardwaj">
+  <meta property="og:description" content="Hands-on SEO experiments: meta tags, sitemaps, structured data, and indexing.">
+  <meta property="og:url" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">
+  <meta property="og:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/images/seo-preview.png">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO Playground | Ishaan Bhardwaj">
+  <meta name="twitter:description" content="Hands-on SEO experiments: meta tags, sitemaps, structured data, and indexing.">
+  <meta name="twitter:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/images/seo-preview.png">
+
+  <!-- JSON-LD structured data (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ishaan Bhardwaj",
+    "url": "https://ishaan-bhardwaj-profile.github.io/seo-plyaground/",
+    "sameAs": [
+      "https://www.linkedin.com/in/YOUR-LINKEDIN-ROOT"
+    ],
+    "jobTitle": "SEO Learner & Builder"
+  }
+  </script>
+
+  <!-- simple CSS (optional) -->
+  <style>
+    body{font-family:system-ui,Arial,Helvetica,sans-serif;line-height:1.6;padding:28px;max-width:900px;margin:auto}
+    header, footer{opacity:0.95}
+    nav a{margin-right:12px}
+    pre.code{background:#f3f3f3;padding:10px;border-radius:6px;overflow:auto}
+  </style>
 </head>
 <body>
-  <h1>Welcome to My SEO Playground</h1>
-  <p>This site is built for SEO learning and experiments.</p>
-  <p><a href="/about.html">About Page</a></p>
+  <header>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="https://github.com/Ishaan-Bhardwaj-Profile/seo-plyaground" target="_blank">Repo</a>
+    </nav>
+    <h1>SEO Playground</h1>
+    <p>Hands-on experiments to learn real SEO: meta tags, sitemaps, indexing, and structured data.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>What I’m testing</h2>
+      <ul>
+        <li>Meta tags & social preview (Open Graph / Twitter)</li>
+        <li>Sitemap & robots rules</li>
+        <li>Structured data (JSON-LD)</li>
+        <li>Indexing through Google Search Console</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Quick notes</h2>
+      <p>To change anything: edit the HTML files in this repo (index.html, about.html) and commit to <code>main</code>. The site rebuilds automatically.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by <strong>Ishaan Bhardwaj</strong> — live at <a href="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">this URL</a>.</p>
+  </footer>
 </body>
 </html>
