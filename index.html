@@ -4,89 +4,101 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>SEO Playground | Ishaan Bhardwaj</title>
-  <meta name="description" content="SEO Playground: A hands-on practice site by Ishaan Bhardwaj to learn crawling, indexing, content and technical SEO.">
+  <title>The Free Gaming Hub — Play & Discover Free Games (2025)</title>
+  <meta name="description" content="Free Gaming Hub — curated lists of free browser & low-spec PC games, quick reviews, and one-click play. Discover free cricket games, puzzle games and a simple in-site Snake game.">
   <meta name="author" content="Ishaan Bhardwaj">
-
-  <!-- canonical -->
   <link rel="canonical" href="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">
 
-  <!-- Open Graph (social previews) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="SEO Playground | Ishaan Bhardwaj">
-  <meta property="og:description" content="Hands-on SEO experiments: meta tags, sitemaps, structured data, and indexing.">
+  <meta property="og:title" content="The Free Gaming Hub — Play & Discover Free Games">
+  <meta property="og:description" content="Curated lists of free browser and low-spec PC games. Play a simple in-site Snake game and discover top free cricket and puzzle games.">
   <meta property="og:url" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">
-  <meta property="og:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/images/seo-preview.png">
+  <meta property="og:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/seo-preview.png">
 
-  <!-- Twitter card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SEO Playground | Ishaan Bhardwaj">
-  <meta name="twitter:description" content="Hands-on SEO experiments: meta tags, sitemaps, structured data, and indexing.">
-  <meta name="twitter:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/images/seo-preview.png">
+  <meta name="twitter:title" content="Free Gaming Hub — Play & Discover Free Games">
+  <meta name="twitter:description" content="Curated lists of free browser and low-spec PC games + an in-site Snake game.">
+  <meta name="twitter:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/seo-preview.png">
 
-  <!-- JSON-LD structured data (Person) -->
+  <!-- JSON-LD: WebSite + Breadcrumb -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ishaan Bhardwaj",
-    "url": "https://ishaan-bhardwaj-profile.github.io/seo-plyaground/",
-    "sameAs": [
-      "https://www.linkedin.com/in/YOUR-LINKEDIN-ROOT"
-    ],
-    "jobTitle": "SEO Learner & Builder"
+    "@type": "WebSite",
+    "name": "Free Gaming Hub",
+    "url": "https://ishaan-bhardwaj-profile.github.io/seo-plyaground/"
   }
   </script>
 
-  <!-- simple CSS (optional) -->
   <style>
-    body{font-family:system-ui,Arial,Helvetica,sans-serif;line-height:1.6;padding:28px;max-width:900px;margin:auto}
-    header, footer{opacity:0.95}
-    nav a{margin-right:12px}
-    pre.code{background:#f3f3f3;padding:10px;border-radius:6px;overflow:auto}
+    :root{--maxw:980px}
+    body{font-family:system-ui,Arial,Helvetica,sans-serif;margin:18px auto;padding:18px;max-width:var(--maxw);line-height:1.6;color:#111}
+    header nav a{margin-right:14px;text-decoration:none;color:#0a66c2}
+    header h1{margin:6px 0 10px}
+    .hero{background:#f7f8fb;padding:18px;border-radius:8px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+    .card{border:1px solid #eee;padding:12px;border-radius:8px;background:#fff}
+    footer{margin-top:32px;color:#555;font-size:0.95rem}
+    .cta{display:inline-block;background:#0a66c2;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
   </style>
-  <!-- Open Graph / Facebook -->
-<meta property="og:title" content="SEO Playground - Ishaan Bhardwaj">
-<meta property="og:description" content="Learning real SEO step by step with live experiments. Follow along!">
-<meta property="og:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/seo-preview.png">
-<meta property="og:url" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">
-<meta property="og:type" content="website">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SEO Playground - Ishaan Bhardwaj">
-<meta name="twitter:description" content="Learning real SEO step by step with live experiments. Follow along!">
-<meta name="twitter:image" content="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/seo-preview.png">
 </head>
 <body>
   <header>
     <nav>
       <a href="/index.html">Home</a>
+      <a href="/cricket-games.html">Cricket Games</a>
+      <a href="/puzzle-games.html">Puzzle Games</a>
+      <a href="/game.html">Play Snake</a>
       <a href="/about.html">About</a>
     </nav>
-    <h1>SEO Playground</h1>
-    <p>Hands-on experiments to learn real SEO: meta tags, sitemaps, indexing, and structured data.</p>
+    <h1>The Free Gaming Hub</h1>
+    <p class="hero">Curated free games that run in your browser or on low-spec PCs. Short reviews, quick links to play, and occasional in-site games to test and enjoy.</p>
   </header>
 
   <main>
     <section>
-      <h2>What I’m testing</h2>
+      <h2>Featured categories</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Free Cricket Games</h3>
+          <p>Shortlists & quick-play links for cricket fans — browser-friendly and low-spec options.</p>
+          <p><a class="cta" href="/cricket-games.html">Explore Cricket Games</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Puzzle Games</h3>
+          <p>Focus and low-spec puzzle titles you can play anywhere — great for quick breaks.</p>
+          <p><a class="cta" href="/puzzle-games.html">Explore Puzzle Games</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Play a Simple Game</h3>
+          <p>Try a lightweight Snake game embedded on this site — instantly playable.</p>
+          <p><a class="cta" href="/game.html">Play Snake</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <h2>Why this hub?</h2>
       <ul>
-        <li>Meta tags & social preview (Open Graph / Twitter)</li>
-        <li>Sitemap & robots rules</li>
-        <li>Structured data (JSON-LD)</li>
-        <li>Indexing through Google Search Console</li>
+        <li>All games are free to play or link to official free sources.</li>
+        <li>Short, honest reviews so you can pick fast.</li>
+        <li>Lightweight: pages are static and load fast for better UX and SEO.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Quick notes</h2>
-      <p>To change anything: edit the HTML files in this repo (index.html, about.html) and commit to <code>main</code>. The site rebuilds automatically.</p>
+    <section style="margin-top:18px">
+      <h2>Latest updates</h2>
+      <p>No posts yet — this hub is new. Expect short lists and one-game add-ins weekly as we expand.</p>
     </section>
   </main>
 
   <footer>
-    <p>Built by <strong>Ishaan Bhardwaj</strong> — live at <a href="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">this URL</a>.</p>
+    <p>Built by <strong>Ishaan Bhardwaj</strong>. Repo & source on GitHub (private link removed from nav for a cleaner site).</p>
+    <p>Site live at <a href="https://ishaan-bhardwaj-profile.github.io/seo-plyaground/">this URL</a>.</p>
   </footer>
 </body>
 </html>
